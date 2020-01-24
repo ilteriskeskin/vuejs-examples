@@ -1,3 +1,9 @@
 html, body, pre, code, kbd, samp {
     font-family: "Kongtext";
 }
+
+.main-div{
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+}

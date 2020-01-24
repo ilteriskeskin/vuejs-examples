@@ -9,26 +9,35 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-	<div id="app">
-		<button class="nes-btn is-success" v-on:click="showAlert('İlteriş')">Alert</button>
-		<button class="nes-btn is-primary" v-on:click="counter++">Counter</button>
-		<button class="nes-btn is-warning" v-on:click="counter+=2">Counter + 2</button>
-		<button class="nes-btn is-error" v-on:click="increaseCounter">Counter WF</button>
-		<br><br>
-		<p class="nes-text is-primary">{{ counter }}</p>
-		<p class="nes-text is-success" v-on:mousemove="updateCoords">
-		Coords: {{ x }}, {{ y }}
-			<span v-on:mousemove.stop>Secret Field</span>
-		</p>
-		
-		<div class="nes-field is-inline">
-			<input id="error_field" class="nes-input is-error" type="text" v-on:keyup.enter="showAlert2">
+	<div class="main-div">
+		<div id="app">
+			<button class="nes-btn is-success" v-on:click="showAlert('İlteriş')">Alert</button>
+			<button class="nes-btn is-primary" v-on:click="counter++">Counter</button>
+			<button class="nes-btn is-warning" v-on:click="counter+=2">Counter + 2</button>
+			<button class="nes-btn is-error" v-on:click="increaseCounter">Counter++ WF</button>
+			<button class="nes-btn is-default" v-on:click="counter--">Counter--</button>
+			<br><br>
+			<p class="nes-text is-primary">{{ counter }}</p>
+			<p class="nes-text is-error">{{ result() }} | {{ output }}</p>
+			<p class="nes-text is-success" v-on:mousemove="updateCoords">
+			Coords: {{ x }}, {{ y }}
+				<span v-on:mousemove.stop>Secret Field</span>
+			</p>
+			
+			<div class="nes-field is-inline">
+				<input id="error_field" class="nes-input is-error" type="text" v-on:keyup.enter="showAlert2">
+			</div>
+			<br><br>
+			<div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
+				<input id="dark_field" class="nes-input is-dark" type="text" v-on:keydown.enter="showAlert3">
+			</div>
+			<p>{{ value }}</p>
+			<br><br>
+			<div class="nes-field is-inline">
+				<input id="error_field" class="nes-input is-warning" type="text" v-model="name">
+			</div>
+			<p>{{ name }}</p>
 		</div>
-		<br><br>
-		<div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
-			<input id="dark_field" class="nes-input is-dark" type="text" v-on:keydown.enter="showAlert3">
-		</div>
-		<p>{{ value }}</p>
 	</div>
 
 	<script type="text/javascript" src="js/app.js"></script>
