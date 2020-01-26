@@ -7,6 +7,7 @@
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
 	 
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	
 </head>
 <body>
 	<div class="main-div">
@@ -37,6 +38,14 @@
 				<input id="error_field" class="nes-input is-warning" type="text" v-model="name">
 			</div>
 			<p>{{ name }}</p>
+
+			<br><br>
+
+			<div @click="attachedClass = !attachedClass" :class="divClass" class="box"></div>
+			<div :class="{ yellow: attachedClass }" class="box"></div>
+			<div :class="color" class="box"></div>
+
+			<input type="text" v-model="color">
 		</div>
 	</div>
 

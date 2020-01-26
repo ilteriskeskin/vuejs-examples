@@ -1,0 +1,29 @@
+html, body, pre, code, kbd, samp {
+    font-family: "Kongtext";
+}
+
+.main-div{
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.yellow{
+    background-color: #fbbd08;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}

@@ -6,6 +6,8 @@ new Vue({
 		y: 0,
 		value: '',
 		name: 'ilteris',
+		attachedClass: false,
+		color: "green",
 	},
 	methods: {
 		showAlert : function(name){
@@ -32,6 +34,12 @@ new Vue({
 		output : function(){
 			return this.counter > 10 ? "Counter bigger than 10" : "Counter smaller than 10";
 		},
+		divClass : function(){
+			return {
+				yellow: this.attachedClass,
+				blue: !this.attachedClass,
+			}
+		}
 	},
 	watch: {
 		counter : function(value){
