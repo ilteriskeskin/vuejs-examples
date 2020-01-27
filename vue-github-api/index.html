@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<title>Vue Github API</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+
+	<div id="app" class="centerAppDiv">
+		<p class="pTag">Github Username</p>
+		<input placeholder="username" type="text" v-model="query">
+		<br><br>
+			<button class="searchButton" v-on:click="search()">Search</button>
+			<div id="result" class="centerh4" v-if="result">
+				<h1 class="header">{{ result.name }}</h1>
+				<img v-bind:src="result.avatar_url">
+				<h4 v-if="result.company"><b>Company: </b> {{ result.company }}</h4>
+				<h4 v-if="result.blog"><b>Blog: </b> <a v-bind:href="result.blog">{{ result.blog }}</a></h4>
+				<h4 v-if="result.location"><b>Location: </b> {{ result.location }}</h4>
+				<h4 v-if="result.email"><b>Email: </b> {{ result.email }}</h4>
+				<h4 v-if="result.bio"><b>Bio: </b> {{ result.bio }}</h4>
+				<h4 v-if="result.public_repos"><b>Public Repos: </b> {{ result.public_repos }}</h4>
+				<h4><b>Followers: </b> {{ result.followers }}</h4>
+				<h4><b>Following: </b> {{ result.following }}</h4>
+				<h4><b>Created Date: </b> {{ result.created_at }}</h4>
+				<h4><b>Updated Date: </b> {{ result.updated_at }}</h4>
+		</div>
+	</div>
+
+</body>
+</html>
