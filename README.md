@@ -1,3 +1,3 @@
 # vuejs-examples
 
-### Click [url]('pythonista.tk') for projects view.
+### Click [url](http://pythonista.tk/) for projects view.
