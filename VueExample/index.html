@@ -48,6 +48,15 @@
 			<div :class="color" class="box"></div>
 
 			<input type="text" v-model="color">
+
+			<br><br>
+
+			<div class="box" :style="{ backgroundColor: color }"></div>
+			<div class="box" :style="customStyle"></div>
+			<div class="box"></div>
+
+			<input type="text" v-model="color">
+			<input type="text" v-model="height">
 		</div>
 	</div>
 

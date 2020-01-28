@@ -8,6 +8,7 @@ new Vue({
 		name: 'ilteris',
 		attachedClass: false,
 		color: "green",
+		height: 100,
 	},
 	methods: {
 		showAlert : function(name){
@@ -37,7 +38,13 @@ new Vue({
 		divClass : function(){
 			return {
 				yellow: this.attachedClass,
-				blue: !this.attachedClass,
+				blue: !this.attachedClass
+			}
+		},
+		customStyle : function(){
+			return {
+				backgroundColor: this.color,
+				height: this.height + "px"
 			}
 		}
 	},
