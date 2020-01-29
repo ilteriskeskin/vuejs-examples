@@ -1,0 +1,58 @@
+h4{
+	color: #9d2503;
+}
+
+ img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+a{
+	color: ;
+}
+
+.centerAppDiv {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.centerh4{
+	margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: left;
+}
+
+#app{
+	margin-top: 6%;
+}
+
+.pTag{
+	color: #a35638;
+	font-weight: 800;
+	font-size: 22px
+}
+
+.searchButton{
+	background-color: #a35638;
+	width: 100px;
+	height: 35px;
+	color: #ffffff;
+	border-radius: 10px;
+}
+
+.searchButton:hover{
+	height: 42px;
+	width: 110px;
+	text-decoration: underline;
+	background-color: #e08f62;
+}
+
+.header{
+	color: #9d2503;
+	text-align: center;
+}
