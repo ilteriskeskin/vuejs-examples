@@ -7,11 +7,24 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"> 
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../style.css">
 	 
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	
 </head>
 <body>
+	<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">VueJs</label>
+    <ul>
+      <li><a class="active" href="https://pythonista.tk/">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 	<div class="main-div">
 		<div id="app">
 			<button class="nes-btn is-success" v-on:click="showAlert('İlteriş')">Alert</button>

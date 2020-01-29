@@ -3,16 +3,74 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>VueJS Examples</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">VueJs</label>
+    <ul>
+      <li><a class="active" href="https://pythonista.tk/">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-	<div style="margin-right: 20%; margin-left: 20%; margin-top: 15%;">
-		<h1>
-			My Hobby and Learn Project
-		</h1>
-		<br><hr><br>
-		<ul>
+	<div style="margin-top: 10%;">
+
+		<div class="cards-list">
+		  
+		<div class="card 1">
+		  <div class="card_image" onclick="redirect_url('monster_hunt/index.html')">
+		  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRYirT5uoOdThGDN-N6OBfwOgSqGbbgugbrlffH8zGQ_WkKikL3" /> 
+		  </div>
+		  <div class="card_title">		    
+		    <p>Monster Hunt Game</p>
+		  </div>
+		</div>
+		  <div class="card 2">
+		  <div class="card_image" onclick="redirect_url('vue-github-api/index.html')">
+		    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRH5lEIrIqc6IZhhso4fAPCZGJys6Wa1dvxLRebqXoTQvJQ-Ks1"/>
+		    </div>
+		  <div class="card_title title-white">
+		    <p>Get User Info with Github Api</p>
+		  </div>
+		</div>
+
+		<div class="card 3">
+		  <div class="card_image" onclick="redirect_url('VueExample/index.html')">
+		    <img src="https://img.freepik.com/free-vector/cute-unicorn-doing-dabbing_21799-168.jpg?size=338&ext=jpg"/>
+		  </div>
+		  <div class="card_title">
+		    <p>Hobby Project for VueJs Learn</p>
+		  </div>
+		</div>
+		  
+		<div class="card 4">
+			<div class="card_image" onclick="redirect_url('vue-01/index.html')">
+		    <img src="https://st2.depositphotos.com/5424124/10620/v/950/depositphotos_106203226-stock-illustration-christmas-penguin-vector-illustration.jpg"/>
+		    </div>
+		  	<div class="card_title title-black">
+		    	<p>Beginner Vue Example</p>
+		  	</div>
+		 	</div>
+		</div>
+
+		<div class="card 4">
+			<div class="card_image" onclick="redirect_url('v-for/index.html')">
+		    <img src="https://cdn.dribbble.com/users/1787323/screenshots/4422567/dribbbe_sqrtl-01.png"/>
+		    </div>
+		  	<div class="card_title title-black">
+		    	<p>Vue For Loop Example (Amazon Shopping Card)</p>
+		  	</div>
+		 	</div>
+		</div>
+<!-- 		<ul>
 			<li>
 				<a href="/monster_hunt/index.html">Monster Hunt Game with VueJS</a>
 			</li>
@@ -28,8 +86,15 @@
 			<li> 
 				<a href="/v-for/index.html">Vue For Loop Example (Amazon Shopping Card)</a>
 			</li>
-		</ul>
+		</ul> -->
 	</div>
+	
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+		function redirect_url(url){
+			window.open("https://pythonista.tk/" + url);
+		}
+	</script>
 
 </body>
 </html>
