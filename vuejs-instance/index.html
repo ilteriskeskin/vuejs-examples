@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vuejs Instance</title>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">VueJs</label>
+    <ul>
+      <li><a class="" href="https://pythonista.tk/">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <br><br>
+
+  <div id="app1">
+    <hello></hello>
+    <h1 ref="heading">{{ title }}</h1>
+    <button v-on:click="show">Show Paragraph</button>
+    <p v-if="showParagraph">We may not always see!!</p>
+  </div>
+
+  <div id="app2">
+    <h1 ref="heading">{{ title }}</h1>
+    <button @click="changeTitle">Change</button>
+  </div>
+
+  <script type="text/javascript" src="./app.js"></script>
+
+</body>
+</html>
